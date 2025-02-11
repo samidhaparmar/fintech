@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TheExotics/AdminPannel</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/form.css">
+  <script src="../../../js/logout_admin.js"></script>
+
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <div class="logo_name">FinSolutions</div>
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="../dashboard.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="../user.html">
+        <i class='bx bx-user'></i>
+        <span class="links_name">User</span>
+      </a>
+      <span class="tooltip">User</span>
+    </li>
+    <li>
+      <a href="../products.html">
+        <i class='bx bx-data'></i>
+        <span class="links_name">Products</span>
+      </a>
+      <span class="tooltip">Products</span>
+    </li>
+    <li>
+      <a href="../orders.html">
+        <i class='bx bx-cart-alt'></i>
+        <span class="links_name">Orders</span>
+      </a>
+      <span class="tooltip">Orders</span>
+    </li>
+    <li>
+      <a onclick="logout()">
+        <i class='bx bx-log-out' id="log_out"></i>        
+        <span class="links_name">LogOut</span>
+      </a>
+      <span class="tooltip">LogOut</span>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+    <section id="header">
+        <ul id="navbar">
+            <li><a  href="add.html">Add Product</a></li>
+            <li><a class="active" href="add_img.html">Add Product Image</a></li>
+            <li><a href="delete.html">Delete Product</a></li>
+        </ul>
+    </section>
+  <div class="text">Add Product Image</div>
+  <form class="form" action="../../../php/admin/products/add_img.php" method="post" enctype="multipart/form-data">
+    <section id="c-data">
+        <div class="container">
+            <hr>
+            <label for="model"><b>Product Name*</b></label>
+            <input type="text" placeholder="Enter Model Name" name="model" id="model" required>
+
+            <label for="img"><b>Image*</b></label>
+            <input type="file" name="img" id="img" required>
+        
+            <hr>
+            <button type="submit" class="registerbtn">Add Product Image</button>
+        </div>
+    </section>
+  </form> 
+</section>
+<script  src="../../../js/admin/dashboard.js"></script>
+<!-- <script  src="../../../js/admin/products/add_img.js"></script> -->
+</body>
+</html>

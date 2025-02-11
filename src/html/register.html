@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Register for FinSolutions" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | FinSolutions</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome (optional) -->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" defer></script>
+
+  <!-- JS for form submission -->
+  <script src="../js/register.js" defer></script>
+  <script src="../js/update_navbar.js" defer></script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header / Navbar -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+      <!-- Brand / Logo -->
+      <div class="text-xl font-bold">
+        <a href="index.html" class="hover:text-blue-600">FinSolutions</a>
+      </div>
+      <!-- Nav Links -->
+      <ul id="navbar" class="flex space-x-6">
+        <li>
+          <a href="index.html" class="text-gray-900 font-semibold transition">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="text-gray-900 hover:text-gray-600 transition">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="text-gray-900 hover:text-gray-600 transition">Contact</a>
+        </li>
+        <li>
+          <a href="register.html" class="text-gray-900 hover:text-gray-600 transition">Register</a>
+        </li>
+        <li>
+          <a href="login.html" class="text-gray-900 hover:text-gray-600 transition">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-500 to-blue-400 text-white py-12 mb-8">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Create an Account</h1>
+      <p class="text-sm md:text-base">
+        Join FinSolutions and unlock your financial future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <main class="container mx-auto px-4 py-4">
+    <div class="max-w-lg mx-auto bg-white shadow-md border border-gray-200 rounded-lg p-6">
+      <h2 class="text-2xl font-bold mb-6 text-center">Register</h2>
+      <form id="registrationForm" class="space-y-4">
+        <!-- First Name -->
+        <div>
+          <label for="firstName" class="block font-semibold mb-1">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter your first name"
+            required
+            class="w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+
+        <!-- Last Name -->
+        <div>
+          <label for="lastName" class="block font-semibold mb-1">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter your last name"
+            required
+            class="w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+
+        <!-- Phone Number -->
+        <div>
+          <label for="phoneNumber" class="block font-semibold mb-1">Phone Number</label>
+          <input
+            type="text"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="Enter your phone number"
+            required
+            class="w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+
+        <!-- Date of Birth -->
+        <div>
+          <label for="dob" class="block font-semibold mb-1">Date of Birth</label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+            class="w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block font-semibold mb-1">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            class="w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label for="password" class="block font-semibold mb-1">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required
+            class="w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+
+        <!-- Confirm Password -->
+        <div>
+          <label for="confirmPassword" class="block font-semibold mb-1">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Re-enter password"
+            required
+            class="w-full border border-gray-300 rounded p-2"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded font-semibold hover:bg-blue-700 transition"
+        >
+          Register
+        </button>
+
+        <p class="text-sm text-gray-600 mt-4 text-center">
+          By registering, you agree to our
+          <a href="terms.html" class="text-blue-600 hover:underline">Terms &amp; Conditions</a>
+        </p>
+      </form>
+
+      <div class="mt-6 text-center text-sm">
+        <p>
+          Already have an account?
+          <a href="login.html" class="text-blue-600 hover:underline">Login</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Brand column -->
+      <div>
+        <h4 class="text-xl font-semibold mb-2">FinSolutions</h4>
+        <p class="text-sm text-gray-300">
+          Your trusted partner for financial products and services.
+        </p>
+      </div>
+      <!-- Contact column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Contact</h4>
+        <p class="text-sm text-gray-300">
+          Address: 123 Finance Street, Money City - 12345, Country
+        </p>
+        <p class="text-sm text-gray-300">Phone: +1 (555) 123-4567</p>
+        <p class="text-sm text-gray-300">Hours: 9:00 - 17:00, Mon - Fri</p>
+      </div>
+      <!-- About column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">About</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="team.html" class="hover:underline">Team</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+          <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:underline">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <!-- My Account column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">My Account</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="login.html" class="hover:underline">Sign In</a></li>
+          <li><a href="register.html" class="hover:underline">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4">
+      <p class="text-center text-sm text-gray-400">
+        &copy; 2023 FinSolutions, All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

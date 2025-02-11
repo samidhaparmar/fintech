@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TheExotics/AdminPannel</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <script src="../../js/logout_admin.js"></script>
+  <script src="../../js/admin/carnum.js"></script>
+  <script src="../../js/admin/carmodels.js"></script>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <div class="logo_name">FinSolutions</div>
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="dashboard.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="./user.html">
+        <i class='bx bx-user'></i>
+        <span class="links_name">User</span>
+      </a>
+      <span class="tooltip">User</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-data'></i>
+        <span class="links_name">Products</span>
+      </a>
+      <span class="tooltip">Products</span>
+    </li>
+    <li>
+      <a href="orders.html">
+        <i class='bx bx-cart-alt'></i>
+        <span class="links_name">Orders</span>
+      </a>
+      <span class="tooltip">Orders</span>
+    </li>
+    <li>
+      <a onclick="logout()">
+        <i class='bx bx-log-out' id="log_out"></i>        
+        <span class="links_name">LogOut</span>
+      </a>
+      <span class="tooltip">LogOut</span>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+    <section id="header">
+        <ul id="navbar">
+            <li><a href="products/add.html">Add Product</a></li>
+            <li><a href="products/add_img.html">Add Product Image</a></li>
+            <li><a href="products/delete.html">Delete Product</a></li>
+        </ul>
+    </section>
+  
+  <!-- MAIN -->
+  <main>
+    <div class="head-title">Products</div>
+    <ul class="box-info">
+      <li>
+        <i class='bx bxs-car-garage' ></i>
+        <span class="text">
+          <h3>4</h3>
+          <p>Categories</p>
+        </span>
+      </li>
+      <li>
+        <i class='bx bxs-car' ></i>
+        <span class="text">
+          <h3 id="carnum">0</h3>
+          <p>Products</p>
+        </span>
+      </li>
+    </ul>
+    <div class="table-data">
+      <div class="order">
+        <div class="head">
+          <h3>Categories / Products</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Number of Products</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                
+                <p>Credit Cards</p>
+              </td>
+              <td id="ferrari">0</td>
+            </tr>
+            <tr>
+              <td>
+                
+                <p>Home Loans</p>
+              </td>
+              <td id="lamborghini">0</td>
+            </tr>
+            <tr>
+              <td>
+                
+                <p>Insurance</p>
+              </td>
+              <td id="maserati">0</td>
+            </tr>
+            <tr>
+              <td>
+                
+                <p>Invesment</p>
+              </td>
+              <td id="mclaren">0</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <!-- MAIN -->
+</section>
+  <script  src="../../../js/admin/dashboard.js"></script>
+</body>
+</html>

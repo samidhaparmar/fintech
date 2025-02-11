@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="FinSolutions - Your Financial Partner" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinSolutions | Home</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome (optional) -->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" defer></script>
+  <script src="test.js" defer></script>
+  <script src="../js/update_navbar.js" defer></script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header / Navbar -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+      <!-- Logo / Brand -->
+      <div class="text-xl font-bold">
+        <a href="index.html" class="hover:text-blue-600">FinSolutions</a>
+      </div>
+      <!-- Nav Links -->
+      <ul id="navbar" class="flex space-x-6">
+        <li>
+          <a href="index.html" class="text-gray-900 font-semibold transition">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="text-gray-900 hover:text-gray-600 transition">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="text-gray-900 hover:text-gray-600 transition">Contact</a>
+        </li>
+        <li>
+          <a href="register.html" class="text-gray-900 hover:text-gray-600 transition">Register</a>
+        </li>
+        <li>
+          <a href="login.html" class="text-gray-900 hover:text-gray-600 transition">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    id="hero"
+    class="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-16 md:py-24"
+  >
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Explore Financial Solutions for Your Future
+      </h1>
+      <p class="text-lg max-w-2xl mx-auto mb-6">
+        We offer the best in credit cards, home loans, insurance plans, and more.
+      </p>
+      <a
+        href="#blogSection"
+        class="inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded hover:bg-gray-100 transition"
+      >
+        Read Our Latest Blogs
+      </a>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="container mx-auto px-4 py-12" id="categoriesSection">
+    <h2 class="text-2xl font-bold text-center mb-8">
+      Our Financial Product Categories
+    </h2>
+    <div
+      class="flex flex-wrap justify-center gap-8"
+      id="categories"
+    >
+      <!-- Static Placeholder Cards -->
+      <div class="w-48 flex flex-col items-center">
+        <img
+          src="../images/credit-card.png"
+          alt="Credit Cards"
+          class="h-24 mb-2"
+        />
+        <h6 class="font-semibold text-center">Credit Cards</h6>
+      </div>
+      <div class="w-48 flex flex-col items-center">
+        <img
+          src="../images/personal.png"
+          alt="Home Loans"
+          class="h-24 mb-2"
+        />
+        <h6 class="font-semibold text-center">Home Loans</h6>
+      </div>
+      <div class="w-48 flex flex-col items-center">
+        <img
+          src="../images/property-insuarence.png"
+          alt="Insurance"
+          class="h-24 mb-2"
+        />
+        <h6 class="font-semibold text-center">Insurance</h6>
+      </div>
+      <div class="w-48 flex flex-col items-center">
+        <img
+          src="../images/investment.png"
+          alt="Investments"
+          class="h-24 mb-2"
+        />
+        <h6 class="font-semibold text-center">Investments</h6>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credit Score CTA -->
+  <section class="container mx-auto px-4 py-12 text-center">
+    <h2 class="text-2xl font-bold mb-4">Check Your Credit Score</h2>
+    <p class="max-w-xl mx-auto text-gray-600 mb-6">
+      See how you’re doing financially and get insights into improving your
+      credit health.
+    </p>
+    <button
+      class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition"
+      onclick="alert('Redirect to Credit Score Page!')"
+    >
+      Check Now
+    </button>
+  </section>
+
+  <!-- Blog Section (Alternating Layout) -->
+  <!-- Blog Section (Alternating Layout) -->
+<section class="container mx-auto px-4 py-8 bg-gray-50" id="blogSection">
+  <h2 class="text-2xl font-bold text-center mb-6">Latest From Our Blog</h2>
+  <div class="space-y-8" id="blogContainer">
+    <!-- Example Post #1 (Image Left, Text Right) -->
+    <div class="flex flex-col md:flex-row items-center gap-4">
+      <img
+        src="../images/image1.png"
+        alt="Blog 1"
+        class="w-full md:w-1/4 rounded-lg shadow"
+      />
+      <div class="md:w-3/4">
+        <h3 class="text-xl font-bold mb-2">5 Tips to Improve Your Credit Score</h3>
+        <p class="text-gray-700">
+          Enhance your credit score by paying bills on time, reducing debt levels, regularly checking your credit reports for errors, limiting new credit applications, and diversifying the types of credit you hold. Each of these steps contributes to a stronger financial profile and better creditworthiness.
+        </p>
+      </div>
+    </div>
+
+    <!-- Example Post #2 (Image Right, Text Left) -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-4">
+      <img
+        src="../images/image.png"
+        alt="Blog 2"
+        class="w-full md:w-1/4 rounded-lg shadow"
+      />
+      <div class="md:w-3/4">
+        <h3 class="text-xl font-bold mb-2">Home Loan Basics</h3>
+        <p class="text-gray-700">
+          Understand the fundamentals of securing a home loan by familiarizing yourself with different interest rates, types of loans, and credit requirements. Know the steps of the loan application process and the factors that influence loan approval to navigate the home buying journey effectively.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Reviews Section -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">What Our Clients Say</h2>
+    <div
+      class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+      id="reviewContainer"
+    >
+      <!-- Static Review #1 -->
+      <div
+        class="bg-white rounded-lg shadow p-6 flex flex-col justify-between"
+      >
+        <p class="text-gray-700 mb-4">
+          “FinSolutions made it so easy to find the right credit card. I saved
+          a ton of money with their comparison tool!”
+        </p>
+        <div class="font-semibold text-blue-600">- John D.</div>
+        <div class="text-yellow-500 mt-2">★★★★★</div>
+      </div>
+
+      <!-- Static Review #2 -->
+      <div
+        class="bg-white rounded-lg shadow p-6 flex flex-col justify-between"
+      >
+        <p class="text-gray-700 mb-4">
+          “I never thought getting a home loan could be this straightforward.
+          Fantastic service and support!”
+        </p>
+        <div class="font-semibold text-blue-600">- Ava S.</div>
+        <div class="text-yellow-500 mt-2">★★★★☆</div>
+      </div>
+
+      <!-- Static Review #3 -->
+      <div
+        class="bg-white rounded-lg shadow p-6 flex flex-col justify-between"
+      >
+        <p class="text-gray-700 mb-4">
+          “Their insurance comparison tool is top-notch. I quickly found a plan
+          suited to my budget.”
+        </p>
+        <div class="font-semibold text-blue-600">- Michael T.</div>
+        <div class="text-yellow-500 mt-2">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div
+      class="container mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-8"
+    >
+      <!-- Brand column -->
+      <div>
+        <h4 class="text-xl font-semibold mb-2">FinSolutions</h4>
+        <p class="text-sm text-gray-300">
+          Your trusted partner for financial products and services.
+        </p>
+      </div>
+
+      <!-- Contact column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Contact</h4>
+        <p class="text-sm text-gray-300">
+          Address: 123 Finance Street, Money City - 12345, Country
+        </p>
+        <p class="text-sm text-gray-300">Phone: +1 (555) 123-4567</p>
+        <p class="text-sm text-gray-300">Hours: 9:00 - 17:00, Mon - Fri</p>
+        <div class="mt-4">
+          <h4 class="text-lg font-semibold mb-2">Follow Us</h4>
+          <div class="flex space-x-4 text-lg">
+            <a
+              href="https://www.facebook.com"
+              class="fab fa-facebook-f hover:text-blue-500"
+            ></a>
+            <a
+              href="https://twitter.com"
+              class="fab fa-twitter hover:text-blue-400"
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              class="fab fa-instagram hover:text-pink-500"
+            ></a>
+            <a
+              href="https://www.linkedin.com"
+              class="fab fa-linkedin hover:text-blue-600"
+            ></a>
+            <a
+              href="https://www.youtube.com"
+              class="fab fa-youtube hover:text-red-600"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">About</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="team.html" class="hover:underline">Team</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+          <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:underline">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- My Account column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">My Account</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="login.html" class="hover:underline">Sign In</a></li>
+          <li><a href="register.html" class="hover:underline">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4">
+      <p class="text-center text-sm text-gray-400">
+        &copy; 2023 FinSolutions, All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

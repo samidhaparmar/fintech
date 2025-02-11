@@ -1,0 +1,80 @@
+
+/* Login and Registration */
+
+#c-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 16px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+/* Full-width input fields */
+input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #dddddd;
+    border-radius: 10px;
+}
+
+input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#gen{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#gender{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #dddddd;
+    margin-left: 20px;
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+ 
+.registerbtn:hover {
+    opacity:1;
+}

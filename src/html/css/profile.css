@@ -1,0 +1,28 @@
+/* Add your styles for profile data display */
+#profileData {
+    margin-top: 2%;
+    margin-left: 29%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 58%;
+}
+
+#profileData h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#profileData p {
+    color: #666;
+}
+
+table{
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+
+

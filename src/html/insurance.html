@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="FinSolutions Insurance" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insurance | FinSolutions</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional JS for dropdown toggles -->
+  <script>
+    function toggleSubcategories() {
+      const subcat = document.getElementById('subcategories');
+      subcat.classList.toggle('hidden');
+    }
+  </script>
+  <script src="../js/update_navbar.js" defer></script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+      <div class="text-xl font-bold">
+        <a href="index.html" class="hover:text-blue-600">FinSolutions</a>
+      </div>
+      <ul id="navbar" class="flex space-x-6">
+        <li>
+          <a href="index.html" class="text-gray-900 font-semibold transition">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="text-gray-900 hover:text-gray-600 transition">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="text-gray-900 hover:text-gray-600 transition">Contact</a>
+        </li>
+        <li>
+          <a href="register.html" class="text-gray-900 hover:text-gray-600 transition">Register</a>
+        </li>
+        <li>
+          <a href="login.html" class="text-gray-900 hover:text-gray-600 transition">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-50 py-8 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-2">Insurance</h1>
+      <p class="text-gray-700">
+        Choose the right coverage for peace of mind.
+      </p>
+    </div>
+  </section>
+
+  <!-- Dropdown or Sub-links for Insurance Types -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Button toggles the subcategories -->
+    <button
+      class="mb-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+      onclick="toggleSubcategories()"
+    >
+      View Insurance Subcategories
+    </button>
+
+    <!-- Subcategories ( Health / Auto ) -->
+    <div id="subcategories" class="space-y-2 hidden">
+      <a
+        href="health-insurance.html"
+        class="block bg-white p-4 rounded shadow hover:shadow-md transition"
+      >
+        Health Insurance
+      </a>
+      <a
+        href="auto-insurance.html"
+        class="block bg-white p-4 rounded shadow hover:shadow-md transition"
+      >
+        Auto Insurance
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">FinSolutions</h4>
+        <p class="text-sm text-gray-300">
+          Your trusted partner for financial products and services.
+        </p>
+      </div>
+      <!-- ... other columns ... -->
+    </div>
+    <div class="border-t border-gray-700 py-4">
+      <p class="text-center text-sm text-gray-400">
+        &copy; 2023 FinSolutions, All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

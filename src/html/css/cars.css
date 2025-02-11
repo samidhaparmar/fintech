@@ -1,0 +1,75 @@
+/* cars containers */
+
+#title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 80px;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 40%;
+    padding: 10px 12px;
+    border: 1px solid #e3e3e3;
+    background-color: #efefef;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.04);
+    margin: 15px 0;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px Orgba(0, 0, 0, 0.1);
+}
+
+#product1 .pro img{
+    width: 100%; 
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+    padding-left: 20px;
+
+}
+
+#product1 .pro .des span{
+    padding-left: 10px;
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-left: 10px;
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}

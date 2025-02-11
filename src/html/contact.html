@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Contact FinSolutions" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | FinSolutions</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome (optional) -->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" defer></script>
+  <script src="../js/update_navbar.js" defer></script>
+</head>
+<body class="font-sans text-gray-900">
+  <!-- Header / Navbar -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+      <!-- Brand / Logo -->
+      <div class="text-xl font-bold">
+        <a href="index.html" class="hover:text-blue-600">FinSolutions</a>
+      </div>
+      <!-- Nav Links -->
+      <ul id="navbar" class="flex space-x-6">
+        <li>
+          <a href="index.html" class="text-gray-900 font-semibold transition">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="text-gray-900 hover:text-gray-600 transition">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="text-gray-900 hover:text-gray-600 transition">Contact</a>
+        </li>
+        <li>
+          <a href="register.html" class="text-gray-900 hover:text-gray-600 transition">Register</a>
+        </li>
+        <li>
+          <a href="login.html" class="text-gray-900 hover:text-gray-600 transition">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">We’re Here to Help</h1>
+      <p class="max-w-xl mx-auto text-gray-700 text-lg">
+        Reach out to us for inquiries, support, or feedback. Our team is ready to assist!
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Info + Form -->
+  <main class="container mx-auto px-4 py-12">
+    <div class="grid gap-10 md:grid-cols-2">
+      <!-- Left Column: Contact Info -->
+      <div>
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Contact Details</h2>
+        <ul class="space-y-4 text-gray-600">
+          <li class="flex items-center space-x-3">
+            <i class="fas fa-map-marker-alt text-blue-600"></i>
+            <span>123 Finance Street, Money City - 12345, Country</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <i class="fas fa-envelope text-blue-600"></i>
+            <span>contact@finsolutions.com</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <i class="fas fa-phone-alt text-blue-600"></i>
+            <span>+1 (555) 123-4567</span>
+          </li>
+          <li class="flex items-center space-x-3">
+            <i class="far fa-clock text-blue-600"></i>
+            <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+          </li>
+        </ul>
+
+        <!-- Map (optional) -->
+        <div class="mt-8">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0237664467445!2d-74.01139222332158!3d40.706025837980285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b5ae01!2sWall%20St%2C%20New%20York%2C%20NY%2C%20USA!5e1!3m2!1sen!2sit!4v1739281668315!5m2!1sen!2sit"
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Right Column: Contact Form -->
+      <div>
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Send a Message</h2>
+        <form class="bg-white p-6 rounded-lg shadow space-y-4">
+          <div>
+            <label for="name" class="block font-semibold mb-1">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              class="w-full border border-gray-300 rounded p-2"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block font-semibold mb-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full border border-gray-300 rounded p-2"
+              required
+            />
+          </div>
+          <div>
+            <label for="message" class="block font-semibold mb-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="How can we help?"
+              class="w-full border border-gray-300 rounded p-2"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Brand column -->
+      <div>
+        <h4 class="text-xl font-semibold mb-2">FinSolutions</h4>
+        <p class="text-sm text-gray-300">
+          Your trusted partner for financial products and services.
+        </p>
+      </div>
+
+      <!-- Contact column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Contact</h4>
+        <p class="text-sm text-gray-300">
+          Address: 123 Finance Street, Money City - 12345, Country
+        </p>
+        <p class="text-sm text-gray-300">Phone: +1 (555) 123-4567</p>
+        <p class="text-sm text-gray-300">Hours: 9:00 - 17:00, Mon - Fri</p>
+        <div class="mt-4">
+          <h4 class="text-lg font-semibold mb-2">Follow Us</h4>
+          <div class="flex space-x-4 text-lg">
+            <a
+              href="https://www.facebook.com"
+              class="fab fa-facebook-f hover:text-blue-400"
+            ></a>
+            <a
+              href="https://twitter.com"
+              class="fab fa-twitter hover:text-blue-400"
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              class="fab fa-instagram hover:text-pink-400"
+            ></a>
+            <a
+              href="https://www.linkedin.com"
+              class="fab fa-linkedin hover:text-blue-500"
+            ></a>
+            <a
+              href="https://www.youtube.com"
+              class="fab fa-youtube hover:text-red-600"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">About</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="team.html" class="hover:underline">Team</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- My Account column -->
+      <div>
+        <h4 class="text-lg font-semibold mb-2">My Account</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="login.html" class="hover:underline">Sign In</a></li>
+          <li><a href="register.html" class="hover:underline">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4">
+      <p class="text-center text-sm text-gray-400">
+        &copy; 2023 FinSolutions, All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

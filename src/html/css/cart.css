@@ -1,0 +1,133 @@
+h1{
+    text-align: center;
+    justify-content: center;
+    margin : 40px auto;
+    font-size: 50px;
+}
+
+.cars_cart{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 20px 80px;
+}
+
+.car{
+    width: 23%;
+    min-width: 47%;
+    padding: 10px 12px;
+    border: 1px solid #e3e3e3;
+    background-color: #efefef;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.04);
+    margin: 15px 0;
+    position: relative;
+}
+
+.dcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rmv_btn{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button{
+    background-color: #088178;
+    color: #fff;
+    padding: 22px 30px;
+    border-radius: 20px;
+}
+
+.des{
+    text-align: start;
+    padding: 10px 0;
+    padding-left: 20px;
+
+}
+
+.des span{
+    padding-left: 10px;
+    color: #606063;
+    font-size: 12px;
+}
+
+.des h5{
+    padding-left: 10px;
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.des h3{
+    padding-left: 10px;
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.car img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+#subtotal{
+    width: 40%;
+    margin: 50px 80px;
+    border: 2px solid #e2e9e1;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.ct{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.ct h3{
+    padding-bottom: 15px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}

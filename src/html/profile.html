@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="FinSolutions - Home" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinSolutions | Home</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- (Optional) FontAwesome for icons -->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" defer></script>
+
+  <!-- Example main.js if you have a script for the index -->
+  <!-- <script src="main.js" defer></script> -->
+  <script src="../js/update_navbar.js" defer></script>
+  <script src="../js/profile.js" defer></script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header / Navbar -->
+  <header class="border-b border-gray-200">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-4">
+      <!-- Logo / Brand -->
+      <div class="text-xl font-bold">
+        <!-- Clicking Logo returns to "index.html" -->
+        <a href="index.html" class="hover:text-blue-600">FinSolutions</a>
+      </div>
+      <!-- Unified Nav Links -->
+      <ul id="navbar" class="flex space-x-6">
+        <li>
+          <a href="index.html" class="text-gray-900 font-semibold transition">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="text-gray-900 hover:text-gray-600 transition">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="text-gray-900 hover:text-gray-600 transition">Contact</a>
+        </li>
+        <li>
+          <a href="register.html" class="text-gray-900 hover:text-gray-600 transition">Register</a>
+        </li>
+        <li>
+          <a href="login.html" class="text-gray-900 hover:text-gray-600 transition">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section (example) -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-12 md:py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to FinSolutions</h1>
+      <p class="max-w-2xl mx-auto text-sm md:text-base">
+        Your partner for credit cards, loans, insurance, and more.
+      </p>
+    </div>
+  </section>
+
+  <!-- Any sections you had before: categories, credit score, blog, reviews, footer, etc. -->
+  <!-- For brevity, only placeholders below -->
+
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6 text-center">Your Profile</h1>
+    <div id="profileDetails" class="max-w-md mx-auto bg-white shadow-md border border-gray-200 rounded-lg p-6">
+      <p class="text-center text-gray-500">Loading your profile...</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">FinSolutions</h4>
+        <p class="text-sm text-gray-300">
+          Your trusted partner for financial products and services.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2">Contact</h4>
+        <p class="text-sm text-gray-300">
+          Address: 123 Finance Street, Money City - 12345, Country
+        </p>
+        <p class="text-sm text-gray-300">Phone: +1 (555) 123-4567</p>
+        <p class="text-sm text-gray-300">Hours: 9:00 - 17:00, Mon - Fri</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2">About</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="team.html" class="hover:underline">Team</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+          <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:underline">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-2">My Account</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="login.html" class="hover:underline">Sign In</a></li>
+          <li><a href="register.html" class="hover:underline">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4">
+      <p class="text-center text-sm text-gray-400">
+        &copy; 2023 FinSolutions, All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

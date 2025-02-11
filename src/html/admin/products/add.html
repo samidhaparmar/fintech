@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TheExotics/AdminPannel</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/form.css">
+  <script src="../../../js/logout_admin.js"></script>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <div class="logo_name">FinSolutions</div>
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="../dashboard.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="../user.html">
+        <i class='bx bx-user'></i>
+        <span class="links_name">User</span>
+      </a>
+      <span class="tooltip">User</span>
+    </li>
+    <li>
+      <a href="../products.html">
+        <i class='bx bx-data'></i>
+        <span class="links_name">Products</span>
+      </a>
+      <span class="tooltip">Products</span>
+    </li>
+    <li>
+      <a href="../orders.html">
+        <i class='bx bx-cart-alt'></i>
+        <span class="links_name">Orders</span>
+      </a>
+      <span class="tooltip">Orders</span>
+    </li>
+    <li>
+      <a onclick="logout()">
+        <i class='bx bx-log-out' id="log_out"></i>        
+        <span class="links_name">LogOut</span>
+      </a>
+      <span class="tooltip">LogOut</span>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+    <section id="header">
+        <ul id="navbar">
+          <li><a class="active" href="add.html">Add Product</a></li>
+          <li><a href="add_img.html">Add Product Image</a></li>
+          <li><a href="delete.html">Delete Product</a></li>
+        </ul>
+    </section>
+  <div class="text">Add Product</div>
+  <form class="form">
+    <section id="c-data">
+        <div class="container">
+            <hr>
+            <label for="pr"><b>Product Name*</b></label>
+            <input type="text" placeholder="Enter Model Name" name="pr" id="model" required>
+
+            <div id="gen">
+              <label for="category"><b>Category*</b></label>
+              <select name="category" id="gender" required>
+                  <option value="" disabled selected>Select Category</option>
+                  <option value="Credit Cards">Credit Cards</option>
+                  <option value="Home Loans">Home Loans</option>
+                  <option value="Insurance">Insurance</option>
+                  <option value="Investments">Investments</option>
+              </select>
+            </div>
+
+            <label for="itr"><b>Interest Rate*</b></label>
+            <input type="text" placeholder="Interest Rate" name="itr" id="itr" required>
+
+            <label for="fee"><b>Fees*</b></label>
+            <input type="number" placeholder="fees" name="fee" id="fee" required>
+
+            <label for="el"><b>Eligibility*</b></label>
+            <input type="text" placeholder="Eligibility" name="el" id="el" required>
+
+            <label for="des"><b>Description*</b></label>
+            <input type="text" placeholder="Description" name="des" id="des" required>
+
+            <label for="be"><b>Benefits*</b></label>
+            <input type="text" placeholder="benefits" name="be" id="be" required>
+
+            <hr>
+            <button type="submit" class="registerbtn">Add Product</button>
+        </div>
+    </section>
+  </form> 
+</section>
+  <script  src="../../../js/admin/dashboard.js"></script>
+  <script  src="../../../js/admin/products/add.js"></script>
+</body>
+</html>
