@@ -16,7 +16,9 @@ if (!myForm) {
       email: formData.get('email'),
       password: formData.get('password')
     };
-
+    // ⬅️ Now also include the captcha token:
+    payload['g-recaptcha-response'] = formData.get('g-recaptcha-response');
+    
     // Convert payload to JSON string
     const data = JSON.stringify(payload);
     console.log("Payload to be sent:", data);

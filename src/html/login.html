@@ -12,6 +12,9 @@
   <!-- FontAwesome (optional) -->
   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" defer></script>
 
+  <!-- Invisible reCAPTCHA API ADDED -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <!-- JS for form submission -->
   <script src="../js/login.js" defer></script>
   <script src="../js/update_navbar.js" defer></script>
@@ -87,13 +90,35 @@
           />
         </div>
 
+        <!-- Invisible reCAPTCHA widget ADDED -->
         <button
-          type="submit"
-          class="w-full bg-blue-600 text-white py-2 rounded font-semibold hover:bg-blue-700 transition"
+          class="g-recaptcha w-full bg-blue-600 text-white py-2 rounded font-semibold hover:bg-blue-700 transition"
+          data-sitekey="6Ld6UiwrAAAAAN2ElWTjLxirNs2jZ-T6lIWB2TSs"
+          data-callback="onRecaptchaSuccess"
+          data-size="invisible"
+          type="button"  <!-- changed to button to control submission -->
         >
           Login
         </button>
+        <!-- Hidden field to carry the token (⬅️ ADDED) -->
+        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
       </form>
+
+
+      <!-- callback for Invisible reCAPTCHA ⬅️ REFACTORED -->
+      <script>
+        function onRecaptchaSuccess(token) {
+          // 1) Locate the login form
+          const form = document.getElementById('loginForm');
+
+          // 2) Stash the reCAPTCHA token into the hidden field for FormData
+          document.getElementById('g-recaptcha-response').value = token;  // ⬅️ ADDED
+
+          // 3) Dispatch the form’s submit event exactly once
+          form.dispatchEvent(new Event('submit'));                       // ⬅️ ADDED
+          }
+      </script>
+
 
       <div class="mt-4 text-center text-sm">
         <a href="#" class="text-blue-600 hover:underline"

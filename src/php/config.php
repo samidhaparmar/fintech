@@ -1,7 +1,7 @@
 <?php
 $host = "mysql";
-$username = "fin_app";
-$password = "S3cureP@ssw0rd"; 
+$username = "samidha";
+$password = "311003"; 
 $dbname = "fintech";
 
 
