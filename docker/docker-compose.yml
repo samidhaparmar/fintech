@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 services:
   mysql:
@@ -15,7 +15,9 @@ services:
       - ../data:/var/lib/mysql
 
   php:
-    image: php:apache
+    build:
+      context: .          # points at Dockerfile.php in this folder
+      dockerfile: Dockerfile.php
     container_name: php-wp
     ports:
       - "8080:80"
@@ -23,6 +25,7 @@ services:
       - ../src:/var/www/html
     depends_on:
       - mysql
+      - redis
 
   phpmyadmin:
     image: phpmyadmin:latest
@@ -35,5 +38,9 @@ services:
     depends_on:
       - mysql
 
-
+  redis:
+    image: redis:alpine
+    container_name: redis-wp
+    ports:
+      - "6379:6379"
 
