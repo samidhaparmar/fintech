@@ -8,6 +8,8 @@ header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 
 // Include DB config (replace with your file name)
 require_once("config.php"); //$pdo + $conn
+require_once __DIR__ . '/rate_limiter.php';
+
 
 // Read JSON input
 $file_json = file_get_contents('php://input');

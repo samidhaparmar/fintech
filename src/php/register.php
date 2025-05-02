@@ -8,6 +8,9 @@ header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
 
 require_once("config.php");  // provides $pdo + legacy $conn
+require_once __DIR__ . '/rate_limiter.php';//
+
+
 
 $table = "users";
 
